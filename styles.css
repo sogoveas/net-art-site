@@ -64,7 +64,7 @@ body {
 }
 
 .bio-text {
-    width: 30%;
+    width: 20%;
     padding: 2rem;
     background-color: black;
     color: white;
@@ -75,7 +75,7 @@ body {
 }
 
 .bio-image {
-    width: 70%;
+    width: 80%;
     height: 100vh;
     overflow: hidden;
 }
