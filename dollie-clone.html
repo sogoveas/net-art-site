@@ -1,160 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dollie Clones</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .doll-diagram-image {
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            position: relative;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Dollie Clones</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .doll-diagram-image {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
 
-        .doll-diagram-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+    .doll-diagram-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        .bold-text-message {
-            width: fit-content;       
-            text-align: left; 
-            font-size: 55px;   
-        }
+    .bold-text-message {
+      width: fit-content;
+      text-align: left;
+      font-size: 55px;
+    }
 
-        .bold-text-description {
-            margin: 2rem auto;         
-            width: fit-content;       
-            text-align: left; 
-            font-size: 16px;
-        }
+    .bold-text-description {
+      margin: 2rem auto;
+      width: fit-content;
+      text-align: left;
+      font-size: 16px;
+    }
 
-        .tillie-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            width: 70%;              
-            margin: 2rem auto;      
-            gap: 0;                  
-        }
+    .tillie-grid, .cyberoberta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 70%;
+      margin: 2rem auto;
+      gap: 0;
+    }
 
-        .tillie-grid img {
-            display: block; 
-            width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
-        }
+    .tillie-grid img,
+    .cyberoberta-grid img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
 
-        .closeup-container {
-            display: flex;
-            justify-content: center; /* center horizontally */
-            gap: 1rem; /* space between images */
-            width: 70%; /* optional, adjust as needed */
-            margin: 2rem auto; /* center container and add vertical spacing */
-        }
+    .closeup-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      width: 70%;
+      margin: 2rem auto;
+    }
 
-        .closeup-container img {
-            width: 48%; /* roughly half container width */
-            height: auto;
-            display: block;
-            border-radius: 5px; /* optional rounded corners */
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3); /* optional shadow */
-        }
+    .closeup-container img {
+      width: 48%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
 
+    .tillie-text,
+    .cyberoberta-text {
+      color: antiquewhite;
+      font-family: 'Ledger';
+      padding: 1rem;
+    }
 
-        .tillie-text {
-            color: white;
-            font-family: 'Ledger', serif;
-            padding: 1rem;
-        }
+    .caption-container {
+      width: 70%;
+      margin: 1rem auto;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: antiquewhite;
+    }
 
-    </style>
+    .caption-left {
+      flex: 1;
+      text-align: left;
+    }
+
+    .caption-right {
+      flex: 1;
+      text-align: right;
+    }
+
+    .dollie-clone-desciption {
+      text-align: center;
+      color: white;
+      margin: 2rem;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="nav-bar">
-        <a href="index.html" style="color: #af6acd;">Home</a>
-        <a href="bio.html" style="color: #af6acd;"> Leeson Bio </a>
-        <a href="dollie-clone.html" class="active" style="color: #af6acd;"> The Dollie Clones</a>
-        <a href="synthia-stock-ticker.html" style="color: #af6acd;"> Synthia Stock Ticker</a>
-        <a href="cycles-of-contention.html" style="color: #af6acd;"> Home Front </a>
-    </div>
+  <div class="nav-bar">
+    <a href="index.html" style="color: #af6acd;">Home</a>
+    <a href="bio.html" style="color: #af6acd;"> Leeson Bio </a>
+    <a href="dollie-clone.html" class="active" style="color: #af6acd;"> The Dollie Clones</a>
+    <a href="synthia-stock-ticker.html" style="color: #af6acd;"> Synthia Stock Ticker</a>
+    <a href="cycles-of-contention.html" style="color: #af6acd;"> Home Front </a>
+  </div>
 
-    <div class="doll-diagram-image">
-        <img src="images/cr_new_doll_diagram.jpg" alt="">
-    </div>
+  <div class="doll-diagram-image">
+    <img src="images/cr_new_doll_diagram.jpg" alt="">
+  </div>
 
-    <div class="dollie-clone-desciption">
-        <h3>THE DOLLIE CLONE SERIES (1995 - 1998)</h3>
-        <h5>LYNN HERSHMAN LEESON</h5>
-        <h6>custom-made dolls, clothing, glasses, webcam, surveillance cameras, telerobotic head rotating system</h6>
-        <h6>22 x 8 x 8 in</h6>
-    </div>
-       
-
-    <div class="closeup-container">
-        <img src="images/tillie-close-up.jpg" alt="Tillie Close-Up">
-        <img src="images/1994 CybeRoberta.jpg" alt="Cyberoberta Close-Up"> 
-    </div>
-
-
-
-    <br>
-
-
-    <br>
-    <br>
-
-    <div class="bold-text-message">
-        <h2>SURVEIL.</h2>
-        <h2>BE A VOYEUR.</h2>
-        <h2>OBJECTIFY YOUR VIEWER.</h2>
-        <h2>REJECT PASSIVITY.</h2>
-        <h2>ARTIFICIALLY CONSTRUCTED FEMALE IDENTITY.</h2>
-    </div>
-
-    <br>
-    <br>
-
-    <div class="tillie-grid">
-        <img src="images/lynn-hershman-leeson-tillie-and-mirror.jpg" alt="">
-        <img src="images/tillie.jpg" alt="">
-
-        <div class="tillie-text">
-            <h3>TILLIE THE TELEROBOTIC DOLL</h3>
-            <h5>LYNN HERSHMAN LEESON</h5>
-            <h6>‘Tillie is the older sibling. Her birth was slow and painful. However, the brain could not be duplicated into a family of humanoids that could be fleshed out through the Net’</h6>
-        </div>
-    </div>
-
-    <img src="images/roberta-mirror.jpeg" alt="">
-    <h3>CYBEROBERTA</h3>
+  <div class="dollie-clone-desciption">
+    <h3>THE DOLLIE CLONE SERIES (1995 - 1998)</h3>
     <h5>LYNN HERSHMAN LEESON</h5>
-    <h6>
+    <h6>custom-made dolls, clothing, glasses, webcam, surveillance cameras, telerobotic head rotating system</h6>
+    <h6>22 x 8 x 8 in</h6>
+  </div>
+
+  <div class="closeup-container">
+    <img src="images/tillie-close-up.jpg" alt="Tillie Close-Up">
+    <img src="images/1994 CybeRoberta.jpg" alt="Cyberoberta Close-Up">
+  </div>
+
+  <div class="bold-text-message">
+    <h2>SURVEIL.</h2>
+    <h2>BE A VOYEUR.</h2>
+    <h2>OBJECTIFY YOUR VIEWER.</h2>
+    <h2>REJECT PASSIVITY.</h2>
+    <h2>ARTIFICIALLY CONSTRUCTED FEMALE IDENTITY.</h2>
+  </div>
+
+  <div class="tillie-grid">
+    <img src="images/lynn-hershman-leeson-tillie-and-mirror.jpg" alt="">
+    <img src="images/tillie.jpg" alt="">
+    <div class="tillie-text">
+      <h3>TILLIE THE TELEROBOTIC DOLL</h3>
+      <h5>LYNN HERSHMAN LEESON</h5>
+      <h6>‘Tillie is the older sibling. Her birth was slow and painful. However, the brain could not be duplicated into a family of humanoids that could be fleshed out through the Net’</h6>
+    </div>
+  </div>
+
+  <div class="cyberoberta-grid">
+    <img src="images/roberta-mirror.jpeg" alt="">
+    <img src="images/through-cyberoberta-eyes.jpg" alt="">
+    
+    </div>
+  </div>
+
+  <div class="caption-container">
+    <div class="caption-left">
+      <h6>Cyberoberta</h6>
+       <h3>CYBEROBERTA</h3>
+      <h5>LYNN HERSHMAN LEESON</h5>
+      <h6>
         “When the dollie clones were born, I thought to convert Roberta, who had been exorcised about five years earlier,
         and have her re-emerge as this kind of evil twin that would steal information from Tillie when they were in some proximity.”
-
-        Leeson adopted many personalities, notably 
-       <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=8043&context=etd_theses" target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
-    Roberta Breitmore
-</a>,
-
-        who she felt the need to exorcise in 1978. She lived as Roberta between 1973 and 1978, even creating an ID, having therapist appointments, and public interactions.
-    </h6>
-
-
-    <img src="images/through-cyberoberta-eyes.jpg" alt="">
-    <h6>through CyberRoberta’s eyes, captured during the exhibition “Moments: A History of Performance in 10 Acts” (2011)</h6>
-
-    <div class="bold-text-description">
-        <h2>TWO IDENTICALLY PROGRAMMED SISTERS</h2>
-        <h2>IMAGES CAPTURED THROUGH THEIR EYES</h2>
-        <h2>WEBPAGE REFRESHED ~30 SECONDS</h2>
-        <h2>USERS OF WEBPAGE ABLE TO SWIVEL DOLLS' HEADS</h2>
-        <h2>DOLLS ARE NOT ONLY OBJECTS, BUT ALSO AGENTS WATCHING THOSE WHO WATCH THEM</h2>
+        <br><br>
+        Leeson adopted many personalities, notably
+        <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=8043&context=etd_theses"
+          target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">Roberta Breitmore</a>,
+        who she felt the need to exorcise in 1978. She lived as Roberta between 1973 and 1978, even creating an ID, having therapist
+        appointments, and public interactions.
+      </h6>
     </div>
+    <div class="caption-right">
+      <h6>through CyberRoberta’s eyes</h6>
+      <p>“Moments: A History of Performance in 10 Acts” (2011)</p>
+    </div>
+  </div>
+
+  <div class="bold-text-description">
+    <h2>TWO IDENTICALLY PROGRAMMED SISTERS</h2>
+    <h2>IMAGES CAPTURED THROUGH THEIR EYES</h2>
+    <h2>WEBPAGE REFRESHED ~30 SECONDS</h2>
+    <h2>USERS OF WEBPAGE ABLE TO SWIVEL DOLLS' HEADS</h2>
+    <h2>DOLLS ARE NOT ONLY OBJECTS, BUT ALSO AGENTS WATCHING THOSE WHO WATCH THEM</h2>
+  </div>
 </body>
 </html>
