@@ -4,27 +4,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leeson</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .nav-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+        backdrop-filter: blur(5px);
+        font-size: 20px;
+        z-index: 1000; 
+        }
+
+    </style>
 </head>
 <body>
     <div class="nav-bar">
-        <a href="index.html"  style="color: #6886ad;">Home</a>
-        <a href="bio.html" class="active" style="color: #6886ad;"> Leeson Bio </a>
-        <a href="dollie-clone.html" style="color: #6886ad;"> The Dollie Clones</a>
-        <a href="synthia-stock-ticker.html"  style="color: #6886ad;"> Synthia Stock Ticker</a>
-        <a href="cycles-of-contention.html"  style="color: #6886ad"> Home Front </a>
+        <a href="index.html"  style="color: antiquewhite;">Home</a>
+        <a href="bio.html" class="active" style="color: antiquewhite;"> Leeson Bio </a>
+        <a href="dollie-clone.html" style="color: antiquewhite;"> The Dollie Clones</a>
+        <a href="synthia-stock-ticker.html"  style="color: antiquewhite;"> Synthia Stock Ticker</a>
+        <a href="cycles-of-contention.html"  style="color: antiquewhite"> Home Front </a>
     </div>
 
     <div class="content">
         <div class="bio-image">
-            <img src="images/lynnhershman-large.jpg" alt="">
+            <a href="https://www.moma.org/artists/39696-lynn-hershman-leeson" 
+            target="_blank" 
+            rel="noopener noreferrer">
+                <img src="images/lynnhershman-large.jpg" alt="Lynn Hershman Leeson at MoMA" />
+            </a>
         </div>
+
         <div class="bio-text">
             <h2>SAN FRANCISCO BASED</h2>
             <br>
+            <h4>depict the constant shift between real-life and the virtual world</h4>
             <br>
-            <h4> depict the constant shift between real-life and the virtual world </h4>
+            <br>
+            <br>
+            <br>
+            <a href="https://www.moma.org/artists/39696-lynn-hershman-leeson" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style="color: pink; font-weight: bold; font-size: 18px;">
+                Lynn Hershman Leeson – MoMA Profile
+            </a>
         </div>
-
     </div>
         
 </body>

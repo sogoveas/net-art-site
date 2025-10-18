@@ -4,21 +4,33 @@ h1 {
     top: 720px;
     transform: translateY(-50%) rotate(90deg);
     transform-origin: right center;
-    color: white;
+    color: antiquewhite;
     font-size: 75px;
     font-family: 'Koulen';
 }
 
+h2 {
+    font-family: 'Koulen';
+    color: antiquewhite;
+}
+
 h3 {
     font-family: 'Koulen';
+    color: antiquewhite;
+}
+
+h4 {
+    color: antiquewhite;
 }
 
 h5 {
     font-family: 'Koulen';
+    color: antiquewhite;
 }
 
 h6 {
     font-family: 'Ledger';
+    color: antiquewhite;
 }
 
 * {
@@ -35,18 +47,16 @@ html, body {
 
 .nav-bar {
     position: absolute;
-    top: 10;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 30px 0;
     font-family: 'Koulen';
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     text-align: center;
     z-index: 2;
-    font-weight: bolder;
 }
 
 
@@ -157,7 +167,7 @@ a {
     width: 50%;
     color: antiquewhite;
     line-height: 1.5;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 @font-face {

@@ -41,11 +41,41 @@
 </head>
 
 <body>
-
-  <audio controls>
+  <audio id="homeFrontAudio" autoplay>
     <source src="audio/Home Front.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.getElementById("homeFrontAudio");
+
+      audio.play().catch((err) => {
+        console.log("Autoplay blocked:", err);
+      });
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          audio.pause();
+        } else {
+          audio.play().catch((err) => {
+            console.log("Resume blocked:", err);
+          });
+        }
+      });
+
+      const navLinks = document.querySelectorAll(".nav-bar a");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          audio.pause();
+          audio.currentTime = 0; 
+        });
+      });
+    });
+  </script>
+
 
   <div class="nav-bar">
     <a href="index.html" style="color:antiquewhite">Home</a>
@@ -62,7 +92,13 @@
     <div class="home-front-container">
       <div class="home-front-left-side">
         <div class="home-front-image">
-            <img src="images/cycles-of-contention.jpg" alt="">
+            <a href="https://www.interviewmagazine.com/art/artist-lynn-hershman-leeson-on-cyborgs-filler-and-film-snobs" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            <img src="images/cycles-of-contention.jpg" 
+            alt="Interview Magazine article on Lynn Hershman Leeson" 
+            style="width: 100%; max-width: 600px; height: auto; cursor: pointer; border: 2px solid antiquewhite;">
+            </a>
         </div>
 
         <div class="home-front-description">
