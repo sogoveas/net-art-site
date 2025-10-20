@@ -31,6 +31,7 @@ h5 {
 h6 {
     font-family: 'Ledger';
     color: antiquewhite;
+    font-size: 19px;
 }
 
 * {
@@ -47,6 +48,7 @@ html, body {
 
 .nav-bar {
     position: absolute;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Koulen';
@@ -60,7 +62,7 @@ html, body {
 
 .bio-nav-bar {
     position: fixed;
-    top: 0;
+    top: 30px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -195,7 +197,6 @@ a {
     width: 50%;
     color: antiquewhite;
     line-height: 1.5;
-    font-size: 40px;
 }
 
 .synthia-container {
@@ -260,7 +261,6 @@ a {
       width: 50%;
       color: antiquewhite;
       line-height: 1.5;
-      font-size: 40px;
     }
 @font-face {
     font-family: Ledger;

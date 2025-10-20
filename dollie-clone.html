@@ -20,18 +20,23 @@
       display: block;
     }
 
-    .bold-text-message {
-      width: fit-content;
-      text-align: left;
-      font-size: 55px;
+    .bold-text-message,
+    .bold-text-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: antiquewhite;
+        font-family: 'Koulen';
     }
 
     .bold-text-description {
-      margin: 2rem auto;
-      width: fit-content;
-      text-align: left;
-      font-size: 16px;
+    font-size: 30px;
+    margin-top: 4rem;
     }
+
 
     .tillie-grid, .cyberoberta-grid {
       display: grid;
@@ -92,10 +97,10 @@
       text-align: right;
     }
 
-    .dollie-clone-desciption {
-      text-align: center;
-      color: white;
-      margin: 2rem;
+    .dollie-clone-description {
+        text-align: center;
+        color: white;
+        margin: 2rem;
     }
   </style>
 </head>
@@ -103,7 +108,7 @@
 <body>
   <div class="nav-bar">
     <a href="index.html" style="color: #af6acd;">Home</a>
-    <a href="bio.html" style="color: #af6acd;"> Leeson Bio </a>
+    <a href="bio.html" style="color: #af6acd;">  Bio </a>
     <a href="dollie-clone.html" class="active" style="color: #af6acd;"> The Dollie Clones</a>
     <a href="synthia-stock-ticker.html" style="color: #af6acd;"> Synthia Stock Ticker</a>
     <a href="cycles-of-contention.html" style="color: #af6acd;"> Home Front </a>
@@ -113,13 +118,13 @@
     <img src="images/cr_new_doll_diagram.jpg" alt="">
   </div>
 
-  <div class="dollie-clone-desciption">
+  <div class="dollie-clone-description">
     <h3> the dollie clone series (1995 - 1998)</h3>
     <h5> lynn hershman leeson</h5>
     <h6>custom-made dolls, clothing, glasses, webcam, surveillance cameras, telerobotic head rotating system</h6>
     <h6>22 x 8 x 8 in</h6>
   </div>
-
+ 
   <div class="closeup-container">
     <img src="images/tillie-close-up.jpg" alt="Tillie Close-Up">
     <img src="images/1994 CybeRoberta.jpg" alt="Cyberoberta Close-Up">
@@ -130,7 +135,7 @@
     <h2>be a voyeur.</h2>
     <h2>objectify your viewer.</h2>
     <h2>reject passivity.</h2>
-    <h2>female identity = artificially constructed</h2>
+    <h2>artificially constructed female identity.</h2>
   </div>
 
   <div class="tillie-grid">
