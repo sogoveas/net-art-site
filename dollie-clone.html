@@ -6,102 +6,8 @@
   <title>The Dollie Clones</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .doll-diagram-image {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .doll-diagram-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .bold-text-message,
-    .bold-text-description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-size: 50px;
-        font-weight: bold;
-        color: antiquewhite;
-        font-family: 'Koulen';
-    }
-
-    .bold-text-description {
-    font-size: 30px;
-    margin-top: 4rem;
-    }
 
 
-    .tillie-grid, .cyberoberta-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      width: 70%;
-      margin: 2rem auto;
-      gap: 0;
-    }
-
-    .tillie-grid img,
-    .cyberoberta-grid img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
-
-    .closeup-container {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      width: 70%;
-      margin: 2rem auto;
-    }
-
-    .closeup-container img {
-      width: 48%;
-      height: auto;
-      display: block;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    .tillie-text,
-    .cyberoberta-text {
-      color: antiquewhite;
-      font-family: 'Ledger';
-      padding: 1rem;
-    }
-
-    .caption-container {
-      width: 70%;
-      margin: 1rem auto;
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      color: antiquewhite;
-    }
-
-    .caption-left {
-      flex: 1;
-      text-align: left;
-    }
-
-    .caption-right {
-      flex: 1;
-      text-align: right;
-    }
-
-    .dollie-clone-description {
-        text-align: center;
-        color: white;
-        margin: 2rem;
-    }
   </style>
 </head>
 
@@ -109,7 +15,7 @@
   <div class="nav-bar">
     <a href="index.html" style="color: #af6acd;">Home</a>
     <a href="bio.html" style="color: #af6acd;">  Bio </a>
-    <a href="dollie-clone.html" class="active" style="color: #af6acd;"> The Dollie Clones</a>
+    <a href="dollie-clone.html" class="active" style="color: pink;"> The Dollie Clones</a>
     <a href="synthia-stock-ticker.html" style="color: #af6acd;"> Synthia Stock Ticker</a>
     <a href="cycles-of-contention.html" style="color: #af6acd;"> Home Front </a>
   </div>
@@ -119,12 +25,12 @@
   </div>
 
   <div class="dollie-clone-description">
-    <h3> the dollie clone series (1995 - 1998)</h3>
-    <h5> lynn hershman leeson</h5>
-    <h6>custom-made dolls, clothing, glasses, webcam, surveillance cameras, telerobotic head rotating system</h6>
+    <h2 style="font-size: 35px;"> the dollie clone series (1995 - 1998)</h2>
+    <h3 style="font-size: 30px;"> lynn hershman leeson</h3>
+    <h6 style="font-size: 20px;">custom-made dolls, clothing, glasses, webcam, surveillance cameras, telerobotic head rotating system</h6>
     <h6>22 x 8 x 8 in</h6>
   </div>
- 
+
   <div class="closeup-container">
     <img src="images/tillie-close-up.jpg" alt="Tillie Close-Up">
     <img src="images/1994 CybeRoberta.jpg" alt="Cyberoberta Close-Up">
@@ -139,49 +45,78 @@
   </div>
 
   <div class="tillie-grid">
-    <img src="images/lynn-hershman-leeson-tillie-and-mirror.jpg" alt="">
-    <img src="images/tillie.jpg" alt="">
-    <div class="tillie-text">
-      <h3>TILLIE THE TELEROBOTIC DOLL</h3>
-      <h5>LYNN HERSHMAN LEESON</h5>
-      <h6>‘Tillie is the older sibling. Her birth was slow and painful. However, the brain could not be duplicated into a family of humanoids that could be fleshed out through the Net’</h6>
+    <div class="tillie-item">
+      <img src="images/lynn-hershman-leeson-tillie-and-mirror.jpg" alt="">
+    </div>
+
+    <div class="tillie-item">
+      <img src="images/tillie.jpg" alt="">
+
+      <div class="tillie-text">
+        <h2>tillie the telerobotic doll</h2>
+        <h3>lynn hershman leeson</h3>
+        <h6>‘Tillie is the older sibling. Her birth was slow and painful. However, the brain could not be duplicated into a family of humanoids that could be fleshed out through the Net’</h6>
+      </div>
     </div>
   </div>
 
   <div class="cyberoberta-grid">
     <img src="images/roberta-mirror.jpeg" alt="">
     <img src="images/through-cyberoberta-eyes.jpg" alt="">
-    
-    </div>
   </div>
 
   <div class="caption-container">
     <div class="caption-left">
-        <h3>CYBEROBERTA</h3>
-        <h5>LYNN HERSHMAN LEESON</h5>
-        <h6>
-            “When the dollie clones were born, I thought to convert Roberta, who had been exorcised about five years earlier,
-            and have her re-emerge as this kind of evil twin that would steal information from Tillie when they were in some proximity.”
-            <br><br>
-            Leeson adopted many personalities, notably
-            <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=8043&context=etd_theses"
-            target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">Roberta Breitmore</a>,
-            who she felt the need to exorcise in 1978. She lived as Roberta between 1973 and 1978, even creating an ID, having therapist
-            appointments, and public interactions.
-        </h6>
+      <h2>cyberoberta</h2>
+      <h3>lynn hershman leeson’s</h3>
+      <h6>
+        “When the dollie clones were born, I thought to convert Roberta, who had been exorcised about five years earlier,
+        and have her re-emerge as this kind of evil twin that would steal information from Tillie when they were in some proximity.”
+        <br><br>
+        Leeson adopted many personalities, notably
+        <a href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=8043&context=etd_theses"
+           target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
+          Roberta Breitmore,
+        </a>
+        who she felt the need to exorcise in 1978. She lived as Roberta between 1973 and 1978, even creating an ID, having therapist
+        appointments, and public interactions.
+      </h6>
     </div>
     <div class="caption-right">
-      <h6>through CyberRoberta’s eyes</h6>
-      <h6>“Moments: A History of Performance in 10 Acts” (2011)</h6>
+      <h2>“Moments: A History of Performance in 10 Acts” (2012)</h2>
+      <h6>
+        An
+        <a href="https://zkm.de/en/exhibition/2012/03/moments" target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
+          exhibition
+        </a>
+        at ZKM in collaboration with MoMA in Munich, Germany. Traced the milestones in the history of performance art beginning in the 1960s onwards. This image was captured during this exhibition through CybeRoberta's 'eyes.' The curation focused on "women who have consciously been thematizing, transgressing and critiquing the genre boundaries... they likewise reflect on the implicit male constructions of the gaze and the gestural logic of their colleagues."
+      </h6>
     </div>
   </div>
 
   <div class="bold-text-description">
     <h2>two identically programmed sisters</h2>
     <h2>images captured through their eyes </h2>
-    <h2>webpage refreshed every thirty seconds</h2>
     <h2>webpage users able to swivel the dolls' heads</h2>
-    <h2> dolls as agents, not objects</h2>
+    <h2>dolls as agents, not objects</h2>
+  </div>
+
+  <div class="about-dollie-clones">
+    <h6>
+      Created shortly after the birth of
+      <a href="https://yjolt.org/blog/dolly-sheep-cautionary-tale" target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
+        Dolly the sheep. 
+      </a> 
+      Tillie and CybeRoberta are two telerobotic dolls designed by Lynn Hershman Leeson. Both dolls are identically programmed and referred to as "sisters," their webpafes invite the viewers to participate. User may click on the dolls' eyes via their webpage, this interaction causes the dolls' heads to swivel to the left or right. The dolls stream their surroundings through a webcam feed that is refreshed every 30 seconds, mimicking live surveillance. 
+      <br><br>
+      Despite this user interaction, The Dollie Clones are not passive. Their feed is occasionally interrupted by abstracted images of their technological bodies, effectively subverting the control of the viewers.  
+      <br><br>
+      The dolls challenge the passive view of the female identity, the viewer is being surveilled as they watch the dolls. This piece interweaves surveillance, voyeurism, and agency. 
+      <br><br>
+      Rooted in Leeson's performance work, particularly her persona Roberta Breitmore. This work explores themes of constructed identity, control, and the cyborg. The dolls act as both the subject and the object, emphasizing how the female identity is shaped, observed, and manipulated in both physical and digital spaces. 
+      <br><br>
+      By blurring the liens between the observer and the observed, the clones become agents, however they remain in systems of remote control. This leads to the question: what does agency truly mean is a networked, surveilled world?
+    </h6>
   </div>
 </body>
 </html>

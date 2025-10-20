@@ -20,18 +20,20 @@ h3 {
 }
 
 h4 {
+    font-family: 'Koulen';
     color: antiquewhite;
 }
 
 h5 {
     font-family: 'Koulen';
     color: antiquewhite;
+    font-size: 19px;
 }
 
 h6 {
     font-family: 'Ledger';
     color: antiquewhite;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 * {
@@ -44,7 +46,6 @@ html, body {
     height: 100%;
     width: 100%;
 }
-
 
 .nav-bar {
     position: absolute;
@@ -77,7 +78,6 @@ html, body {
     text-align: center;
 }
 
-
 body {
     margin: 0;
     background-color: #272727;
@@ -92,7 +92,7 @@ body {
 }
 
 .bio-text {
-    width: 20%;
+    width: 25%;
     padding: 2rem;
     background-color: #272727;
     color: anq;
@@ -103,7 +103,7 @@ body {
 }
 
 .bio-image {
-    width: 80%;
+    width: 75%;
     height: 100vh;
     overflow: hidden;
 }
@@ -115,57 +115,9 @@ body {
     display: block;
 }
 
-.hamburger {
-  display: none;
-  font-size: 40px;
-  color: antiquewhite;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 70px;
-  right: 20px;
-  background-color: #272727;
-  padding: 1rem;
-  border: 2px solid antiquewhite;
-  z-index: 998;
-}
-
-.mobile-menu a {
-  color: antiquewhite;
-  text-decoration: none;
-  font-family: 'Koulen';
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.mobile-menu.active {
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-bar {
-    display: none;
-  }
-}
-
-
 a {
-    color:black;
     text-decoration: none;
 }
-
 
 .home-front-container {
     margin: 4rem auto 2rem auto;
@@ -207,7 +159,7 @@ a {
 }
 
 .synthia-main-content {
-      margin-top: 6rem;
+    margin-top: 6rem;
 }
 
 .synthia-left-side {
@@ -230,6 +182,18 @@ a {
     color: antiquewhite;
 }
 
+.synthia-grid {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+.synthia-grid img {
+  max-width: 100%; 
+  height: auto;
+}
 
 .home-front-container {
     margin: 4rem auto 2rem auto;
@@ -238,30 +202,156 @@ a {
     gap: 2rem;
 }
 
-    .home-front-main-content {
-      margin-top: 6rem;
-    }
+.home-front-main-content {
+    margin-top: 6rem;
+}
 
-    .home-front-left-side {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      color: antiquewhite;
-    }
+.home-front-left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: antiquewhite;
+}
 
-    .home-front-left-side img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      display: block;
-    }
+.home-front-left-side img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
 
-    .home-front-blurb {
-      width: 50%;
-      color: antiquewhite;
-      line-height: 1.5;
-    }
+.home-front-blurb {
+    width: 50%;
+    color: antiquewhite;
+    line-height: 1.5;
+}
+
+.doll-diagram-image {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.doll-diagram-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bold-text-message,
+.bold-text-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: antiquewhite;
+    font-family: 'Koulen';
+}
+
+.bold-text-description {
+    font-size: 30px;
+    margin-top: 4rem;
+}
+
+.closeup-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.closeup-container img {
+    width: 48%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tillie-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.tillie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 300px;
+}
+
+.tillie-item img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.tillie-text {
+    color: antiquewhite;
+    font-family: 'Ledger';
+    text-align: left;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.caption-container {
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: antiquewhite;
+}
+
+.caption-left {
+    flex: 1;
+    text-align: left;
+}
+
+.caption-right {
+    flex: 1;
+    text-align: right;
+}
+
+.cyberoberta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.cyberoberta-grid img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+
+.dollie-clone-description {
+    text-align: center;
+    color: antiquewhite;
+    margin: 2rem;
+}
+
+.about-dollie-clones {
+    max-width: 70%;
+    margin: 4rem auto;
+    color: antiquewhite;
+    line-height: 1.6;
+}
+
 @font-face {
     font-family: Ledger;
     src: url('fonts/Ledger-Regular.ttf') format('truetype');

@@ -12,43 +12,12 @@
     Your browser does not support the audio element.
   </audio>
 
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const audio = document.getElementById("homeFrontAudio");
-
-      audio.play().catch((err) => {
-        console.log("Autoplay blocked:", err);
-      });
-
-      document.addEventListener("visibilitychange", function () {
-        if (document.hidden) {
-          audio.pause();
-        } else {
-          audio.play().catch((err) => {
-            console.log("Resume blocked:", err);
-          });
-        }
-      });
-
-      const navLinks = document.querySelectorAll(".nav-bar a");
-
-      navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-          audio.pause();
-          audio.currentTime = 0; 
-        });
-      });
-    });
-  </script>
-
-
   <div class="nav-bar">
     <a href="index.html" style="color:antiquewhite">Home</a>
     <a href="bio.html" style="color: antiquewhite;">  Bio </a>
     <a href="dollie-clone.html" style="color: antiquewhite;"> The Dollie Clones</a>
     <a href="synthia-stock-ticker.html" style="color: antiquewhite;" class="active"> Synthia Stock Ticker</a>
-    <a href="cycles-of-contention.html" style="color: antiquewhite;"> Home Front </a>
+    <a href="cycles-of-contention.html" class="active" style="color: pink;"> Home Front </a>
   </div>
 
   <br>
@@ -77,16 +46,16 @@
 
       <div class="home-front-blurb"> 
         <h6>
-            the ‘Home Front’ is a miniature Gothic-style
+            The ‘Home Front’ is a miniature Gothic-style
             <a href="https://www.thedollcarvers.com/victorias-collection/the-history-of-early-dollhouses-fr3j8" target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
             dollhouse
             </a>  
          
-             of muted colors through two distinct windows. one window plays a 33-minute unedited video of a couple beginning an affectionate conversation, slowly devolving into an intense argument. the other window has a 26-minute video in which each partner explaining their conflicting narratives. the audience is brought into a private moment, in a voyeuristic way, furthered by the viewers not just eavesdropping but also peeking through the window of the dollhouse. the piece critiques the traditional roles within marriage and the societal expectation that often silence the voices of women. the audience is prompted to look inside the windows, they are unable to provide any relief, they take the role oof the judge; watching, but failing to help. tne comfort of a home frames the piece, setting the stage for challenging the viewer's expectation of a safe, nurturing home. 
-            
-            the piece emphasize how the voices of women are mediated, politicized, and silences, even within private spaces. the themes consist of domestic violence, subjectivity, representation, and voyeurism. the contradictory versions of the same event depicts how memory, ego, and trauma effect our perspectives. it is a critique of power imbalances in a domestic context. the experience of women is often dismissed. 
-
-            how does technology effect the truth? the installation displays how digital media captures human suffering, and loops it for the viewing of others. the autonomy of the couple is stripped. 
+            of muted colors through two distinct windows. One window plays a 33-minute unedited video of a couple beginning an affectionate conversation, slowly devolving into an intense argument. The other window has a 26-minute video in which each partner explaining their conflicting narratives. The audience is brought into a private moment, in a voyeuristic way, furthered by the viewers not just eavesdropping but also peeking through the window of the dollhouse. The piece critiques the traditional roles within marriage and the societal expectation that often silence the voices of women. The audience is prompted to look inside the windows, they are unable to provide any relief, they take the role oof the judge; watching, but failing to help. Tne comfort of a home frames the piece, setting the stage for challenging the viewer's expectation of a safe, nurturing home. 
+            <br><br>
+            The piece emphasize how the voices of women are mediated, politicized, and silences, even within private spaces. the themes consist of domestic violence, subjectivity, representation, and voyeurism. The contradictory versions of the same event depicts how memory, ego, and trauma effect our perspectives. It is a critique of power imbalances in a domestic context. The experience of women is often dismissed. 
+            <br><br>
+            How does technology effect the truth? the installation displays how digital media captures human suffering, and loops it for the viewing of others. The autonomy of the couple is stripped. 
          </h6>
       </div>
     </div>
