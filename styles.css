@@ -75,7 +75,7 @@ body {
 }
 
 .bio-text {
-    width: 50%;
+    width: 30%;
     padding: 2rem;
     background-color: #272727;
     display: flex;
@@ -93,7 +93,7 @@ body {
 }
 
 .bio-image img {
-  width: 100%;              
+  width: 80%;              
   max-width: px;       
   height: auto;          
 }
@@ -271,7 +271,6 @@ a:hover {
     width: 48%;
     height: auto;
     display: block;
-    border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -361,4 +360,163 @@ a:hover {
 @font-face {
     font-family: Koulen;
     src: url('fonts/Koulen-Regular.ttf') format('truetype');
+}
+
+
+/* ===== Tablet (≤1024px) ===== */
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: 50px;
+    right: 50px;
+    top: 600px;
+  }
+
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bio-text {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 24px;
+  }
+
+  .bio-image {
+    width: 100%;
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .bio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .home-front-left-side,
+  .synthia-left-side,
+  .home-front-blurb,
+  .synthia-blurb {
+    width: 100%;
+  }
+
+  .synthia-grid {
+    flex-direction: column;
+    max-width: 90%;
+    gap: 20px;
+  }
+
+  .closeup-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .closeup-container img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .tillie-grid {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .tillie-item {
+    flex: 1 1 100%;
+  }
+
+  .cyberoberta-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .doll-diagram-image {
+    height: 70vh;
+  }
+}
+
+/* ===== Mobile (≤600px) ===== */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 35px;
+    right: 20px;
+    top: 500px;
+  }
+
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bio-text {
+    width: 100%;
+    padding: 1rem;
+    font-size: 18px;
+  }
+
+  .bio-image {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+  }
+
+  .bio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .home-front-left-side,
+  .synthia-left-side,
+  .home-front-blurb,
+  .synthia-blurb {
+    width: 100%;
+  }
+
+  .synthia-grid {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .closeup-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .closeup-container img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .tillie-grid {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tillie-item {
+    flex: 1 1 100%;
+  }
+
+  .cyberoberta-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .doll-diagram-image {
+    height: 50vh;
+  }
+
+  .bold-text-message,
+  .bold-text-description {
+    font-size: 30px;
+  }
+
+  .bold-text-description {
+    margin-top: 2rem;
+    font-size: 20px;
+  }
 }
