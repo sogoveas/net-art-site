@@ -13,6 +13,7 @@
   </audio>
 
   <div class="nav-bar">
+    <div class="hamburger">☰</div>
     <a href="index.html" style="color:antiquewhite">Home</a>
     <a href="bio.html" style="color: antiquewhite;">  Bio </a>
     <a href="dollie-clone.html" style="color: antiquewhite;"> The Dollie Clones</a>
@@ -20,6 +21,22 @@
     <a href="cycles-of-contention.html" class="active" style="color: pink;"> Home Front </a>
   </div>
 
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-bar');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+  
+    <script>
+    document.querySelectorAll('.clickable-img').forEach(img => {
+    img.addEventListener('click', () => {
+      window.location.href = img.dataset.link;
+      });
+    });
+  </script>
   <br>
   <br>
   
@@ -27,17 +44,17 @@
     <div class="home-front-container">
       <div class="home-front-left-side">
         <div class="home-front-image">
-            <a href="https://www.interviewmagazine.com/art/artist-lynn-hershman-leeson-on-cyborgs-filler-and-film-snobs" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <img src="images/cycles-of-contention.jpg" 
+          <img 
+            src="images/cycles-of-contention.jpg" 
             alt="Interview Magazine article on Lynn Hershman Leeson" 
-            style="width: 100%; max-width: 600px; height: auto; cursor: pointer; border: 2px solid antiquewhite;">
-            </a>
-        </div>
+            style="width: 100%; max-width: 600px; height: auto; cursor: pointer;"
+            onclick="window.open('https://www.interviewmagazine.com/art/artist-lynn-hershman-leeson-on-cyborgs-filler-and-film-snobs', '_blank');"
+        />
+    </div>
+
 
         <div class="home-front-description">
-          <h2 style="font-size: 40px;"> cycles of contentionn - home front (2011)</h2>
+          <h2 style="font-size: 30px;"> cycles of contentionn - home front (2011)</h2>
           <h5 style="font-size: 20px;">lynn hershman leeson</h5>
           <h5 style="font-size: 20px;"> 24 1/2 x 17 1/2 x 27 IN </h5>
           <h5 style="font-size: 20px;">dollhouse, dual channel video, & custom electronics</h5>

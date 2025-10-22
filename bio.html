@@ -8,6 +8,7 @@
 
 <body>
     <div class="nav-bar">
+        <div class="hamburger">☰</div>
         <a href="index.html"  style="color: antiquewhite;">Home</a>
         <a href="bio.html" class="active" style="color: pink;">  Bio </a>
         <a href="dollie-clone.html" style="color: antiquewhite;"> The Dollie Clones</a>
@@ -15,17 +16,32 @@
         <a href="cycles-of-contention.html"  style="color: antiquewhite"> Home Front </a>
     </div>
 
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav-bar');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.clickable-img').forEach(img => {
+        img.addEventListener('click', () => {
+        window.location.href = img.dataset.link;
+        });
+    });
+    </script>
+
+    <br><br><br><br>
     <div class="content">
       <div class="bio-image">
-        <a 
-            href="https://www.moma.org/artists/39696-lynn-hershman-leeson" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <img  src="images/lynnhershman-large.jpg" 
-            alt="Lynn Hershman Leeson at MoMA" />
-        </a>
-    </div>
-
+            <img 
+            src="images/lynnhershman-large.jpg" 
+            alt="Lynn Hershman Leeson at MoMA"
+            style="cursor: pointer;"
+            onclick="window.open('https://www.moma.org/artists/39696-lynn-hershman-leeson', '_blank');"/>
+        </div>
 
         <div class="bio-text">
             <h2>SAN FRANCISCO BASED</h2>
@@ -35,16 +51,16 @@
             <h5>identity v. persona</h5>
             <br>
             <a href="https://www.moma.org/artists/39696-lynn-hershman-leeson" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style="color: pink; font-weight: bold; font-size: 18px;">
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style="color: pink; font-weight: bold; font-size: 18px;">
                 Lynn Hershman Leeson – MoMA Profile
             </a>
             <br>
             <a href="https://research.ebsco.com/linkprocessor/plink?id=12669ae2-bbf9-3d8b-a6f8-835888793629" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style="color: pink; font-weight: bold; font-size: 18px;">
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style="color: pink; font-weight: bold; font-size: 18px;">
                 The Raw Data Diet, All-Consuming Bodies and the Shape of Things to Come
             </a>
         </div>

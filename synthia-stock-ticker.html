@@ -8,6 +8,7 @@
 
 <body>
   <div class="nav-bar">
+    <div class="hamburger"> ☰</div>
     <a href="index.html" style="color:antiquewhite">Home</a>
     <a href="bio.html" style="color: antiquewhite;">  Bio </a>
     <a href="dollie-clone.html" style="color: antiquewhite;"> The Dollie Clones</a>
@@ -15,18 +16,36 @@
     <a href="cycles-of-contention.html" style="color: antiquewhite;"> Home Front </a>
   </div>
 
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-bar');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll('.clickable-img').forEach(img => {
+    img.addEventListener('click', () => {
+      window.location.href = img.dataset.link;
+    });
+  });
+  </script>
+
   <br>
   <div class="synthia-main-content">
     <div class="synthia-container">
       <div class="synthia-left-side">
         <div class="synthia-image">
-          <a href="https://www.lynnhershman.com/project/synthia-stock-ticker-2/#:~:text=Like%20its%20namesake%2C%20the%20stock,based%20on%20accumulated%20stock%20data." 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <img src="images/synthia-stock-ticker.jpg" 
-                alt="Synthia Stock Ticker by Lynn Hershman Leeson" 
-                style="width: 100%; height: auto; border: 2px solid pink; cursor: pointer;" />
-          </a>
+           <img 
+              src="images/synthia-stock-ticker.jpg" 
+              alt="Synthia Stock Ticker by Lynn Hershman Leeson" 
+              style="cursor: pointer;" 
+              onclick="window.open('https://www.lynnhershman.com/project/synthia-stock-ticker-2/', '_blank');"
+            />
+
+
       </div>
 
 
@@ -46,7 +65,9 @@
         stock ticker,
       </a> 
         a special type of telegraph receiver designed to print an alphabetical company symbol and the current price of that stock. 
-        Synthia has sixteen predetermined actions based upon two percent changes in accumulated stock data (based on Dow Jones Industrial average, NASDAQ, S&P500 and the Russell Cap Indexes). When the market has an upward trend, synthia dances and shops at 
+        Synthia has sixteen predetermined actions based upon two percent changes in accumulated stock data (based on Dow Jones Industrial average, NASDAQ, S&P500 and the Russell Cap Indexes). 
+        <br><br>
+        When the market has an upward trend, synthia dances and shops at 
         <a href="https://www.dior.com/en_us" target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
           Dior;
         </a> 
@@ -54,20 +75,35 @@
        <a href="https://www.google.com/maps/dir//1700+Haight+St,+San+Francisco,+CA+94117/@37.7696672,-122.53282,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x80858753b2c67fd9:0x6c9b81eb943116fb!2m2!1d-122.450389!2d37.7696864?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
             Goodwill.
         </a> 
-        Synthia’s entire personality is determined by the state of the economy. Leeson’s work depicts a women tied to the volatile stock market - a women is manipulated by an external force; Synthia lacks autonomy. Synthia exists in the context of 
+        Synthia’s entire personality is determined by the state of the economy. Leeson’s work depicts a women tied to the volatile stock market - a women is manipulated by an external force; Synthia lacks autonomy. 
+        <br><br>
+        Synthia exists in the context of 
         <a href="https://cyberfeminismindex.com/#/fosschix" target="_blank" rel="noopener noreferrer" style="color: pink; font-weight: bold;">
           cyberfeminism,
         </a> 
-        a feminist response to the rise of the internet and virtual identity. She is part of Leeson's expansion of her exploration of artifical identity, surveillance, and female authonomy. This sculpture is tied to data and how it relates to the value of women in society. The women is commodified, the value of women in society is depicted wherein the value of women is tied to stock prices. Women's bodies, labor, and roles are confined to economic assets. The sole identity of women in this sculpture is manipulated, tracked, and measured by a system out of their control. this piece is a part of Leeson's larger work focused on cyberfeminism - using technology to challenge gender norms in the digital space. Once more, the viewer is the voyeur. How does media percieve an emotional life?
+        a feminist response to the rise of the internet and virtual identity. She is part of Leeson's expansion of her exploration of artifical identity, surveillance, and female authonomy. This sculpture is tied to data and how it relates to the value of women in society. The women is commodified, the value of women in society is depicted wherein the value of women is tied to stock prices. Women's bodies, labor, and roles are confined to economic assets. The sole identity of women in this sculpture is manipulated, tracked, and measured by a system out of their control. 
+        <br><br>
+        This piece is a part of Leeson's larger work focused on cyberfeminism - using technology to challenge gender norms in the digital space. Once more, the viewer is the voyeur. How does media percieve an emotional life?
         </h6>
       </div>
     </div>
   </div>
 
-  <div class="synthia-grid">
-
-    <img src="images/dow-synthia.jpg" alt="image of synthia stock ticker, where dow jones index is up, so synthia is happy">
-    <img src="images/nasdaq-depressed.jpeg" alt="image of the synthia stock, wehre nasdaq is down, so synthia is 'depressed">
-  </div>
+<div class="synthia-grid">
+  <img 
+    src="images/dow-synthia.jpg" 
+    alt="Synthia stock up (happy)" 
+    style="cursor: pointer;"
+    onclick="window.open('https://amt.parsons.edu/finearts/lectures/lynn-hershman-leeson/', '_blank');"
+  />
+  <img 
+    src="images/nasdaq-depressed.jpeg" 
+    alt="Interview Magazine article on Lynn Hershman Leeson" 
+    style="cursor: pointer;"
+    onclick="window.open('https://dam.org/museum/artists_ui/artists/hershman-leeson-lynn/hershman-net-works/', '_blank');"
+  />
+</div>
+</div>
+<br><br>
 </body>
 </html>

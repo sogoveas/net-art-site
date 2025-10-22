@@ -16,13 +16,38 @@
 
 <body>
     <div class="nav-bar">
-        <a href="index.html"  class="active" style="color: pink;">Home</a>
+        <div class="hamburger" style="color: #c73b00;">☰</div>
+        <a href="index.html"  class="active" style="color: pink; transform: none !important; transition: none;">Home</a>
         <a href="bio.html"  style="color: #c73b00;"> Bio </a>
         <a href="dollie-clone.html" style="color: #c73b00;"> The Dollie Clones</a>
         <a href="synthia-stock-ticker.html"  style="color: #c73b00;"> Synthia Stock Ticker</a>
         <a href="cycles-of-contention.html"  style="color: #c73b00;"> Home Front </a>
     </div>
-    <img src="images/lynn-self-portrait.jpg" alt="">
-    <h1 style="color: #c73b00;">LYNN HERSHMAN LEESON</h1>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav-bar');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.clickable-img').forEach(img => {
+        img.addEventListener('click', () => {
+        window.location.href = img.dataset.link;
+        });
+    });
+  </script>
+
+
+        <img 
+            src="images/lynn-self-portrait.jpg" 
+            alt="Roberta Construction Chart by Lynn Hershman Leeson" 
+            style="cursor: pointer;"
+            onclick="window.open('https://www.tate.org.uk/art/artworks/hershman-leeson-roberta-construction-chart-1-p20339', '_blank');"
+        />
+    <h1 style="color: #c73b00; font-family: Koulen;">lynn hershman leeson</h1>
 </body>
 </html>
